@@ -1,0 +1,7 @@
+print("===간단한 계산기 ===")
+num1 = int(input("첫 번째 숫자 입력 : "))
+num2 = int(input("두 번째 숫자 입력 : "))
+print(f"{num1}+{num2} = {num1+num2:x}")
+print(f"{num1}-{num2} = {num1-num2:x}")
+print(f"{num1}*{num2} = {num1*num2:x}")
+#print(f"{num1}/{num2} = {num1/num2:x}")

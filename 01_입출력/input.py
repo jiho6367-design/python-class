@@ -1,0 +1,6 @@
+number = input("숫자를 입력하세요 : ")
+print(type((number)))
+print((number))
+print(number + number)
+inumber = int(number)
+print(inumber + inumber)
