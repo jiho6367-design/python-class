@@ -2,9 +2,9 @@ def caesar(word,key):
    #alpa = list("ABCDEFGHIJKLMNOPQRSTUVWXYZ")
     result = []
     for i in word:
-        off = ord(i)-ord('A')
-        off_enc= (off + key) % 26
-        enc = chr(ord('A') + off_enc) 
+        off = ord(i) - ord('A')
+        off_enc = (off + key) % 26
+        enc = chr(ord('A') + off_enc)
         result.append(enc) 
     return "".join(result)
 
