@@ -1,5 +1,7 @@
 import random
+#nums = random.sample("0123456789",3)
 nums = random.sample(range(0,10),3)
+nums = [str(x) for x in nums]
 
 count = 0
 
