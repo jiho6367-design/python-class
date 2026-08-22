@@ -1,25 +1,30 @@
-#%%
 class FourCal :
     def __init__(self,x,y) :
-        self.a, self.b = x,y
-    def add(self) :
-        self.c = 100
-        result = self.a + self.b
-        return result
-    def sub(self) :
-        result = self.a - self.b
-        return result
-    def mul(self) :
-        result = self.a * self.b
-        return result
-    def div(self) :
-        result = self.a / self.b
-        return result
-f0 = FourCal(3,4)
-f1 = FourCal(5,6)
+        self.x = x
+        self.y = y 
+    def __repr__(self):
+          return f"FourCal({self.x}, {self.y})"
+    def add(self):
+        return self.x + self.y
+    def mul(self):
+            return self.x * self.y
+    def sub(self):
+            return self.x - self.y
+    def div(self):
+            return self.x / self.y   
 
-print(f1.add())
-print(f1.sub())
-print(f1.mul())
-print(f1.div())
-# %%
+a = FourCal(4,2)
+#a.setdata(4,2)
+print(a.add())
+print(a.mul())
+print(a.sub())
+print(a.div())
+
+# b = FourCal()
+# b.setdata(6,3)
+# print(b.add())
+# print(b.mul())
+# print(b.sub())
+# print(b.div())
+
+li = [FourCal(4,2) for i in range(0,100)]
